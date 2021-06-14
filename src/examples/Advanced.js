@@ -4,24 +4,39 @@ import TinderCard from "react-tinder-card";
 
 const db = [
     {
-        name: "Richard Hendricks",
-        url: "./img/richard.jpg",
+        name: "情報システム論実習",
+        faculty: "情報学研究科社会情報学専攻",
+        teacher: "吉川 正俊",
+        description:
+            "履修者は、情報システムに関連する実習を行うことにより、関連する理論や技術を実際の情報システムの分析やデザインに適用することを通して習得する。情報システムの分析や設計に関する方法論や技術を、実際に情報システムの分析や設計に応用できるようになる。",
     },
     {
-        name: "Erlich Bachman",
-        url: "./img/erlich.jpg",
+        name: "情報システム分析論",
+        faculty: "情報学研究科社会情報学専攻",
+        teacher: "吉川 正俊",
+        description:
+            "履修者は、情報システムに関連する実習を行うことにより、関連する理論や技術を実際の情報システムの分析やデザインに適用することを通して習得する。情報システムの分析や設計に関する方法論や技術を、実際に情報システムの分析や設計に応用できるようになる。",
     },
     {
-        name: "Monica Hall",
-        url: "./img/monica.jpg",
+        name: "情報システム論3",
+        faculty: "情報学研究科社会情報学専攻",
+        teacher: "吉川 正俊",
+        description:
+            "履修者は、情報システムに関連する実習を行うことにより、関連する理論や技術を実際の情報システムの分析やデザインに適用することを通して習得する。情報システムの分析や設計に関する方法論や技術を、実際に情報システムの分析や設計に応用できるようになる。",
     },
     {
-        name: "Jared Dunn",
-        url: "./img/jared.jpg",
+        name: "情報シス論4",
+        faculty: "情報学研究科社会情報学専攻",
+        teacher: "吉川 正俊",
+        description:
+            "履修者は、情報システムに関連する実習を行うことにより、関連する理論や技術を実際の情報システムの分析やデザインに適用することを通して習得する。情報システムの分析や設計に関する方法論や技術を、実際に情報システムの分析や設計に応用できるようになる。",
     },
     {
-        name: "Dinesh Chugtai",
-        url: "./img/dinesh.jpg",
+        name: "情報シ",
+        faculty: "情報学研究科社会情報学専攻",
+        teacher: "吉川 正俊",
+        description:
+            "履修者は、情報システムに関連する実習を行うことにより、関連する理論や技術を実際の情報システムの分析やデザインに適用することを通して習得する。情報システムの分析や設計に関する方法論や技術を、実際に情報システムの分析や設計に応用できるようになる。",
     },
 ];
 
@@ -89,7 +104,12 @@ function Advanced() {
                         <div
                             style={{ backgroundColor: "white" }}
                             className="card"
-                        ></div>
+                        >
+                            <h2>{character.name}</h2>
+                            <h3>{character.faculty}</h3>
+                            <h3>{character.teacher}</h3>
+                            <h4>{character.description}</h4>
+                        </div>
                     </TinderCard>
                 ))}
             </div>
